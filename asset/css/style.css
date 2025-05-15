@@ -1,0 +1,315 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Heebo", "Quicksand", sans-serif;
+  margin: 0;
+}
+
+header.container-profile {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1152px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+}
+
+header .nav-list ul {
+  display: flex;
+  gap: 33px;
+  justify-content: flex-end;
+  padding: 27px 60px;
+  margin: 0;
+}
+header .nav-list li {
+  list-style-type: none;
+}
+header .nav-list a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+
+section.first {
+  padding: 0 148px;
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1152px;
+  margin-top: 158px;
+}
+section.first .content {
+  display: flex;
+  align-items: center;
+}
+section.first .content .deskripsi {
+  padding-right: 106px;
+}
+section.first .content .deskripsi .tittle {
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 60px;
+  margin-block: 18px;
+}
+section.first .content .deskripsi p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: auto;
+  margin-block: 22px;
+}
+section.first .content .deskripsi button {
+  padding: 9px 21px;
+  background-color: #ff6464;
+  border: 3px solid transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+  margin-top: 18px;
+}
+section.first .content .deskripsi button:hover {
+  border: 3px solid #ff6464;
+  background-color: transparent;
+  color: black;
+}
+section.first .profil img {
+  width: 243px;
+  height: 243px;
+  border-radius: 243px;
+  box-shadow: -5px 15px 5px #d0f0fa;
+}
+
+section.first .profil {
+  display: flex;
+}
+section.second {
+  background-color: #d0f0fa;
+  margin-block: 70px;
+}
+section.second .post {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1152px;
+  padding: 0 148px;
+  padding-block: 32px;
+}
+section.second header {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+section.second header h2 {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+section.second .post-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+section.second .post-list article {
+  background-color: white;
+  padding: 24px;
+  width: 100%;
+  max-width: 418px;
+}
+section.second .post-list h3 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+section.second .post-list span {
+  font-size: 18px;
+  font-weight: 400;
+}
+section.second .post-list p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+section.second .post-list article:nth-child(n + 3) {
+  display: none;
+}
+
+#toggle-posts:checked ~ section.second .post-list article {
+  display: block;
+}
+
+.toggle-posts-btn {
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+  color: #00a8cc;
+  cursor: pointer;
+}
+
+#toggle-posts:checked
+  ~ section.second
+  .post
+  > header
+  > .toggle-posts-btn::after {
+  content: "View less";
+  display: inline;
+}
+#toggle-posts:not(:checked)
+  ~ section.second
+  .post
+  > header
+  > .toggle-posts-btn::after {
+  content: "View all";
+  display: inline;
+}
+
+.toggle-posts-btn::before {
+  content: "";
+}
+.toggle-posts-btn {
+  position: relative;
+}
+section.third {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1152px;
+  padding: 0 148px;
+}
+section.third h2 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+section.third article {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding-block: 30px;
+}
+section.third .img-skill img {
+  max-width: 246px;
+  width: full;
+}
+section.third .skill {
+  padding-inline: 18px;
+}
+section.third .skill h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+section.third .skill p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+aside {
+  margin-top: 100px;
+  margin-bottom: 25px;
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1152px;
+  padding: 0 148px;
+}
+aside .sosial-media ul {
+  color: #21243d;
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  padding: 0;
+}
+aside .sosial-media li {
+  list-style-type: none;
+}
+aside .sosial-media a {
+  color: #21243d;
+  font-size: 50px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+aside .sosial-media a:hover {
+  color: #00a8cc;
+}
+aside .pendidikan {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-block: 35px;
+}
+aside h2 {
+  text-align: center;
+}
+aside .pendidikan img {
+  max-width: 200px;
+
+  width: 100%;
+}
+footer {
+  text-align: center;
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1152px;
+  padding: 0 148px;
+}
+footer p {
+  margin-bottom: 55px;
+  font-size: 14px;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  section.first {
+    padding: 1rem 3rem;
+  }
+  section.second .post {
+    padding: 22px 11px;
+  }
+  section.third {
+    padding: 22px 11px;
+  }
+
+  section.first .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  section.first .content .deskripsi {
+    text-align: center;
+    padding: 0;
+  }
+  section.first .content .deskripsi .title {
+    font-size: 3rem;
+  }
+  section.first .content .deskripsi p {
+    font-size: 1rem;
+  }
+  section.first .content .profil {
+    order: -1;
+  }
+  section.second .post-list {
+    grid-template-columns: 1fr;
+  }
+  section.second .post-list article {
+    width: 100%;
+    max-width: 100%;
+  }
+  section.second .post-list article:nth-child(n + 2) {
+    display: none;
+  }
+  section.third article {
+    flex-direction: column;
+    gap: 10px;
+  }
+  header .nav-list ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

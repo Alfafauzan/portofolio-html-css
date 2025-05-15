@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <title>Alfa Fauzan-Portofolio</title>
+  </head>
+  <body>
+    <header class="container-profile">
+      <nav class="nav-list">
+        <ul>
+          <li><a href="#resume">My CV</a></li>
+          <li><a href="#work">Works</a></li>
+          <li><a href="#skill">skill</a></li>
+          <li><a href="#sosialmedia">Sosial Media</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Bagian 1 = Resume -->
+      <section id="resume" class="first">
+        <div class="content">
+          <div class="deskripsi">
+            <h1 class="tittle">Hi, I am Alfa Fauzan, Front End Developer</h1>
+            <p>
+              I am a 6th-semester student majoring in Informatics Engineering at
+              Mercu Buana University. I have a solid understanding of several
+              programming languages and am currently focusing on developing my
+              skills in Front End Development.
+            </p>
+            <button
+              onclick="const link = document.createElement('a'); link.href='asset/pdf/cv-baru.pdf'; link.download='Resume_Alfa_Fauzan.pdf'; document.body.appendChild(link); link.click(); document.body.removeChild(link);"
+            >
+              Download CV
+            </button>
+          </div>
+
+          <div class="profil">
+            <img src="asset/img/PAS FOTO.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Bagian ke 2 = Work Experience -->
+      <input type="checkbox" id="toggle-posts" hidden />
+      <section id="work" class="second">
+        <div class="post">
+          <header>
+            <h2>Work Experience</h2>
+            <label for="toggle-posts" class="toggle-posts-btn"></label>
+          </header>
+          <div class="post-list">
+            <article>
+              <h3>Staff Bookkeeper</h3>
+              <span>Juni 2022 – Agustus 2022 | Toko Besi Surya Baja.</span>
+              <p>
+                Bertanggung jawab mendata penjualan setiap harinya dan
+                ketersedian stok, harga barang., Membuat laporan penjualan
+                setiap minggu nya., Melakukan input data nota penjualan toko
+                besi.
+              </p>
+            </article>
+            <article>
+              <h3>Bendahara</h3>
+              <span>September 2024 - Saat ini | UKM Badminton</span>
+              <p>
+                Mengelola keuangan berupa masuk dan keluarnya uang pada UKM.,
+                Menentukan dana yang di butuhkan saat menjalani event., Merekap
+                keuangan di akhir priode
+              </p>
+            </article>
+            <article>
+              <h3>Posisi</h3>
+              <span>Masa waktu | tempat kerja</span>
+              <p>penjelasan bekerja saat di perusahaan yang di tempati</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Bagian 3 = skill -->
+      <section id="skill" class="third">
+        <h2>Skill</h2>
+        <article>
+          <div class="img-skill"><img src="asset/img/2.png" alt="" /></div>
+          <div class="skill">
+            <h2>PHP (Laravel)</h2>
+            <p>
+              Saya mulai mempelajari PHP sebagai dasar pemrograman backend dan
+              mengembangkan aplikasi menggunakan Laravel. Saya memahami konsep
+              MVC, routing, blade templating, serta penggunaan migration dan
+              seeder. Saat ini saya sedang mengembangkan proyek sistem
+              inventaris sederhana menggunakan Laravel.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="img-skill"><img src="asset/img/3.png" alt="" /></div>
+          <div class="skill">
+            <h2>CSS</h2>
+            <p>
+              Saya menggunakan CSS untuk membangun tampilan web yang responsif
+              dan menarik. Saya memahami layout dengan Flexbox dan Grid, serta
+              mampu mengimplementasikan desain UI dari Figma. Saya juga terbiasa
+              menyesuaikan styling dengan kebutuhan mobile (responsive design).
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="img-skill"><img src="asset/img/4.png" alt="" /></div>
+          <div class="skill">
+            <h2>HTML 5</h2>
+            <p>
+              Saya menggunakan HTML5 sebagai dasar utama dalam struktur web.
+              Saya terbiasa menggunakan elemen semantik untuk membangun halaman
+              yang mudah dipahami dan ramah SEO. HTML juga saya gunakan sebagai
+              dasar integrasi dengan CSS dan JavaScript dalam proyek web.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <aside id="sosialmedia">
+      <h2>Education</h2>
+      <div class="pendidikan">
+        <img src="asset/img/mercu-buana.png" alt="" />
+        <img src="asset/img/daarul-quran.png" alt="" />
+      </div>
+      <div class="sosial-media">
+        <ul>
+          <li>
+            <a href="https://wa.me/6285195406464"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/muhammad-alfa-fauzan-/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href=" https://github.com/Alfafauzan"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/alzan.04/?next=%2F"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <footer><p>&copy; 2025 Alfa Fauzan. All rights reserved.</p></footer>
+  </body>
+</html>
